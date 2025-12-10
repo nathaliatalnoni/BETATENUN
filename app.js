@@ -326,7 +326,8 @@ function renderTenunList() {
 
     const motifVal = document.getElementById("filterMotif").value.trim().toLowerCase();
     const daerahVal = document.getElementById("filterDaerah").value.trim().toLowerCase();
-    const warnaVal = document.getElementElementById("filterWarna").value.trim().toLowerCase();
+    const warnaVal = document.getElementById("filterWarna").value.trim().toLowerCase();
+
     const hargaMaxVal = Number(document.getElementById("filterHargaMax").value || 0);
     const tMulaiVal = document.getElementById("filterTanggalMulai").value;
     const tSelesaiVal = document.getElementById("filterTanggalSelesai").value;
