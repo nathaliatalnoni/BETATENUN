@@ -214,9 +214,6 @@ p {
     font-weight: 600;
 }
 
-
-/* HERO SECTION */
-
 .hero {
     position: relative;
     border-radius: 24px;
@@ -276,17 +273,11 @@ p {
     max-width: 440px;
 }
 
-
-/* GRID */
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
 }
-
-
-/* Tenun */
 
 .tenun-img {
     width: 100%;
@@ -297,8 +288,14 @@ p {
     background: #e5e7eb;
 }
 
-
-/* Forms */
+.tenun-img-detail {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #e5e7eb;
+}
 
 form {
     margin-top: 8px;
@@ -328,6 +325,23 @@ textarea {
     transition: border 0.15s, box-shadow 0.15s, background 0.15s;
 }
 
+.date-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 640px) {
+    .date-2col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.input-invalid {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 1px rgba(220, 38, 38, 0.35) !important;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -340,9 +354,6 @@ textarea:focus {
 textarea {
     min-height: 70px;
 }
-
-
-/* Buttons */
 
 button {
     cursor: pointer;
@@ -394,9 +405,6 @@ button:disabled {
     cursor: not-allowed;
     box-shadow: none;
 }
-
-
-/* Status & rating */
 
 .status-pill {
     display: inline-block;
@@ -458,9 +466,6 @@ th {
     background: #f9fafb;
 }
 
-
-/* Layout helpers */
-
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -481,9 +486,6 @@ th {
     flex-wrap: wrap;
 }
 
-
-/* Alerts */
-
 .alert {
     background: #ecfdf3;
     color: #166534;
@@ -499,9 +501,6 @@ th {
     color: #991b1b;
     border-color: #fecaca;
 }
-
-
-/* Profil toko */
 
 .toko-header {
     display: flex;
@@ -538,18 +537,12 @@ th {
     border: 1px solid rgba(129, 140, 248, 0.6);
 }
 
-
-/* Bullet list */
-
 .bullet-list {
     margin-left: 18px;
     font-size: 0.9rem;
     line-height: 1.6;
     color: #374151;
 }
-
-
-/* Filter form */
 
 .filter-form {
     margin-top: 6px;
@@ -560,9 +553,6 @@ th {
     display: flex;
     gap: 8px;
 }
-
-
-/* Auth card */
 
 .auth-card {
     max-width: 420px;
@@ -637,7 +627,48 @@ th {
 }
 
 
-/* Responsive */
+/* =========================
+   UPDATE: teks putih di area gelap
+   ========================= */
+
+.card-soft,
+.card-soft p,
+.card-soft li,
+.card-soft .muted {
+    color: #ffffff !important;
+}
+
+.card-soft .muted {
+    opacity: 0.88;
+}
+
+.card-soft .bullet-list {
+    color: #ffffff !important;
+}
+
+.hero-text,
+.hero-note {
+    color: #ffffff !important;
+    opacity: 0.92;
+}
+
+.review-photo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    margin-top: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: #f3f4f6;
+}
+
+.review-form {
+    margin-top: 10px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+}
 
 @media (max-width: 640px) {
     header {
